@@ -216,14 +216,14 @@ Permissions are checked at multiple levels: app-level config rules → tool-spec
 **Architecture Series** (Planned — high value ⭐⭐)
 - [x] Swarm agents — multi-agent group coordination (6.8K lines)
 - [x] Session persistence — conversation storage (7.6K lines)
-- [ ] Context assembly — attachments, memory, skills
+- [x] Context assembly — attachments, memory, skills (8.3K lines)
 - [ ] Compact system — auto-compaction, snip, microcompact
 - [ ] Startup optimization — preloading, lazy imports
 - [ ] Bridge system — IDE bidirectional communication (11.7K lines)
-- [ ] CLAUDE.md parsing — project context files (1.3K lines)
+- [x] CLAUDE.md parsing — project context files (1.3K lines) ← covered in Context Assembly
 
 **Localization**
-- [ ] 中文 README
+- [x] 中文 README
 
 ---
 
