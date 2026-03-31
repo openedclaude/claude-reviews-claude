@@ -4,7 +4,7 @@
 
 *An AI reading its own source code. Yes, really. Anthropic probably didn't see this coming either.*
 
-*🍿 Season 1 now streaming | 9 episodes out | Claude reverse-engineers itself faster than it writes code.*
+*🍿 Season 1 complete | All 17 episodes | Claude reverse-engineers itself faster than it writes code.*
 
 *Don't miss an episode — Star ⭐ to subscribe.*
 
@@ -28,6 +28,7 @@ This is **not** a source code dump. It's a structured engineering analysis — a
 
 | # | Topic | What You'll Learn | Deep Dive |
 |---|-------|-------------------|-----------|
+| 0 | **Architecture Overview** | Full landscape of 17 subsystems, engineering excellence, transferable design patterns | [Read →](architecture/00-overview.md) |
 | 1 | **QueryEngine: The Brain** | How the 1,296-line core engine manages LLM queries, tool loops, and session state | [Read →](architecture/01-query-engine.md) |
 | 2 | **Tool System Architecture** | How 42+ tools are registered, validated, and executed as self-contained modules | [Read →](architecture/02-tool-system.md) |
 | 3 | **Multi-Agent Coordinator** | How Claude Code spawns parallel workers, routes messages, and synthesizes results | [Read →](architecture/03-coordinator.md) |
@@ -41,6 +42,9 @@ This is **not** a source code dump. It's a structured engineering analysis — a
 | 11 | **Compact System** | Three-tier compaction: microcompact, session memory compact, LLM summarization (3.9K lines) | [Read →](architecture/11-compact-system.md) |
 | 12 | **Startup & Bootstrap** | Fast-path cascade, dynamic imports, API preconnection, global state singleton (7.6K+ lines) | [Read →](architecture/12-startup-bootstrap.md) |
 | 13 | **Bridge System** | Remote control protocol, dual transport generations, poll-dispatch loop, crash recovery (11.7K lines) | [Read →](architecture/13-bridge-system.md) |
+| 14 | **UI & State Management** | Ink rendering engine, React reconciler, Vim mode, Computer Use (140+ components) | [Read →](architecture/14-ui-state-management.md) |
+| 15 | **Services & API Layer** | API client, stream reassembly, MCP server management, OAuth auth (12K lines) | [Read →](architecture/15-services-api-layer.md) |
+| 16 | **Infrastructure & Config** | Settings merge pipeline, GrowthBook feature flags, telemetry, build system (15K lines) | [Read →](architecture/16-infrastructure-config.md) |
 
 > ⭐ **Enjoy the meta? Star the repo — an AI analyzing itself deserves at least that.**
 
@@ -163,21 +167,21 @@ graph TB
 
 ```
 claude-code-deep-dive/
-├── README.md                          ← You are here
-├── DISCLAIMER.md                      # Legal & ethical notice
+├── README.md                          ← 中文版 README
+├── README_EN.md                       ← You are here
+├── DISCLAIMER.md / DISCLAIMER_CN.md   # Legal & ethical notice
 │
-├── architecture/                      # 🏗️ Architecture Deep Dives
+├── architecture/                      # 🏗️ Architecture Deep Dives (17 episodes)
+│   ├── 00-overview.md                 # Architecture overview
 │   ├── 01-query-engine.md             # QueryEngine: the brain
 │   ├── 02-tool-system.md              # 42-module tool architecture
-│   ├── 03-coordinator.md              # Multi-agent coordination
-│   ├── 04-permission-system.md        # Permission pipeline + sandbox
-│   ├── 05-context-assembly.md         # Dynamic prompt assembly
-│   ├── 06-startup-optimization.md     # Prefetch, lazy load, feature flags
-│   ├── 07-bridge-system.md            # IDE ↔ CLI bridge
-│   └── 08-design-patterns.md          # Reusable agentic patterns
-│
-└── stats/
-    └── codebase-metrics.md            # Code statistics
+│   ├── ...                            # 03-13 subsystems
+│   ├── 14-ui-state-management.md      # UI & state management
+│   ├── 15-services-api-layer.md       # Services & API layer
+│   ├── 16-infrastructure-config.md    # Infrastructure & config
+│   └── zh-CN/                         # 🇨🇳 Chinese translations (17 episodes)
+│       ├── 00-overview.md
+│       └── ...
 ```
 
 ---
@@ -204,29 +208,27 @@ Permissions are checked at multiple levels: app-level config rules → tool-spec
 
 ## 📌 Roadmap
 
-**Architecture Series** (Core — completed)
-- [x] Architecture overview + diagrams
+**Architecture Series** (All 17 episodes — Complete ✅)
+- [x] Architecture Overview — full landscape of 17 subsystems
 - [x] QueryEngine deep dive — the brain of Claude Code
 - [x] Tool system walkthrough — 42 modules, one interface
 - [x] Multi-agent coordinator — parallel workers, fork mechanism
-
-**Architecture Series** (Next up — high impact ⭐⭐⭐)
-- [x] Plugin system — loading, marketplace, installation (18.8K lines)
+- [x] Plugin system — loading, validation, integration (18.8K lines)
 - [x] Hook system — PreToolUse / PostToolUse / SessionStart (8K lines)
 - [x] Bash execution engine — sandbox, pipe management (11.5K lines)
 - [x] Permission pipeline — defense-in-depth, sandbox (9.5K lines)
-
-**Architecture Series** (Planned — high value ⭐⭐)
 - [x] Swarm agents — multi-agent group coordination (6.8K lines)
 - [x] Session persistence — conversation storage (7.6K lines)
 - [x] Context assembly — attachments, memory, skills (8.3K lines)
-- [x] Compact system — auto-compaction, snip, microcompact (3.9K lines)
-- [x] Startup optimization — preloading, lazy imports, fast-path cascade (7.6K+ lines)
-- [x] Bridge system — IDE bidirectional communication (11.7K lines)
-- [x] CLAUDE.md parsing — project context files (1.3K lines) ← covered in Context Assembly
+- [x] Compact system — auto-compaction, microcompact (3.9K lines)
+- [x] Startup & bootstrap — fast-path cascade, dynamic imports (7.6K+ lines)
+- [x] Bridge system — remote control protocol (11.7K lines)
+- [x] UI & state management — Ink rendering, Vim mode (140+ components)
+- [x] Services & API layer — stream reassembly, MCP servers (12K lines)
+- [x] Infrastructure & config — settings merge, feature flags, telemetry (15K lines)
 
 **Localization**
-- [x] 中文 README
+- [x] Full bilingual EN/ZH for all 17 episodes
 
 ---
 

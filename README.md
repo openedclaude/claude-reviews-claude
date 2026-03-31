@@ -6,7 +6,7 @@
 
 *一个 AI 在阅读自己的源代码。是的，这很元（Meta）。Anthropic 估计也没料到这一天。*
 
-*🍿 Season 1 连载中 | 已更新至第 9 集 | Claude 拆自己的进度比它写代码的速度还快。*
+*🍿 Season 1 完结 | 全 17 集 | Claude 拆自己的进度比它写代码的速度还快。*
 
 *追更不迷路，点个 Star 当订阅 ⭐*
 
@@ -30,6 +30,7 @@
 
 | # | 主题 | 你将学到什么 | 深度分析 |
 |---|-------|-------------------|-----------|
+| 0 | **架构总纲 (Overview)** | 17 个子系统的全景导览、工程卓越点与可迁移设计模式 | [阅读 →](architecture/zh-CN/00-overview.md) |
 | 1 | **查询引擎 (QueryEngine)：大脑** | 核心引擎（1296行）如何管理 LLM 查询、工具循环和会话状态 | [阅读 →](architecture/zh-CN/01-query-engine.md) |
 | 2 | **工具系统架构 (Tool System)** | 42+ 个工具作为自包含模块如何注册、验证和执行 | [阅读 →](architecture/zh-CN/02-tool-system.md) |
 | 3 | **多智能体协调器 (Coordinator)** | Claude Code 如何衍生并行工作线程、分发消息并汇总结果 | [阅读 →](architecture/zh-CN/03-coordinator.md) |
@@ -43,6 +44,9 @@
 | 11 | **压缩系统 (Compact System)** | 三层压缩架构：微压缩、会话记忆压缩、LLM 摘要压缩（3.9千行代码） | [阅读 →](architecture/zh-CN/11-compact-system.md) |
 | 12 | **启动与引导 (Startup & Bootstrap)** | 快速路径级联、动态导入、API 预连接、全局状态单例（7.6+千行代码） | [阅读 →](architecture/zh-CN/12-startup-bootstrap.md) |
 | 13 | **桥接系统 (Bridge System)** | 远程控制协议、双代传输层、轮询-分发循环、崩溃恢复（1.17万行代码） | [阅读 →](architecture/zh-CN/13-bridge-system.md) |
+| 14 | **UI 与状态管理** | Ink 渲染引擎、React 协调器、Vim 模式、Computer Use（140+ 组件） | [阅读 →](architecture/zh-CN/14-ui-state-management.md) |
+| 15 | **服务与 API 层** | API 客户端、流重组、MCP 服务器管理、OAuth 认证（1.2万行代码） | [阅读 →](architecture/zh-CN/15-services-api-layer.md) |
+| 16 | **基础设施与配置** | 设置合并管道、GrowthBook 功能开关、遥测、构建系统（1.5万行代码） | [阅读 →](architecture/zh-CN/16-infrastructure-config.md) |
 
 > ⭐ **喜欢这种“套娃”感吗？给这个仓库点个赞吧 —— 一个正在分析自己的 AI 值得拥有这颗星。**
 
@@ -150,51 +154,48 @@ graph TB
 
 ```
 claude-code-deep-dive/
-├── README.md                          ← 英文版 README
-├── README_CN.md                       # ← 你现在的所在位置
-├── DISCLAIMER.md                      # 法律与伦理声明
-├── DISCLAIMER_CN.md                   # 法律与伦理声明 (中文版)
+├── README.md                          ← 你现在的所在位置
+├── README_EN.md                       # 英文版 README
+├── DISCLAIMER.md / DISCLAIMER_CN.md   # 法律与伦理声明
 │
-├── architecture/                      # 🏗️ 架构深度分析
-│   ├── 01-query-engine.md             # 查询引擎：大脑
-│   ├── 02-tool-system.md              # 42 模块工具架构
-│   ├── 03-coordinator.md              # 多智能体协调
-│   ├── zh-CN/                         # 🇨🇳 中文版架构解析
-│   │   ├── 01-query-engine.md
-│   │   └── ...
-│   └── ...
-│
-└── stats/
-    └── codebase-metrics.md            # 代码库统计指标
+├── architecture/                      # 🏗️ 架构深度分析（17 篇）
+│   ├── 00-overview.md                 # 架构总纲
+│   ├── 01-query-engine.md             # 查询引擎
+│   ├── 02-tool-system.md              # 工具系统
+│   ├── ...                            # 03-13 各子系统
+│   ├── 14-ui-state-management.md      # UI 与状态管理
+│   ├── 15-services-api-layer.md       # 服务与 API 层
+│   ├── 16-infrastructure-config.md    # 基础设施与配置
+│   └── zh-CN/                         # 🇨🇳 中文版架构解析（17 篇对照）
+│       ├── 00-overview.md
+│       └── ...
 ```
 
 ---
 
 ## 📌 路线图 (Roadmap)
 
-**架构解析系列** (核心 - 已完成)
-- [x] 架构概览与图表
-- [x] 查询引擎 (QueryEngine) 深度解析 —— Claude Code 的“大脑”
-- [x] 工具系统 (Tool System) 走读 —— 42 个模块，一个接口
+**架构解析系列** (全 17 篇 —— 已完结 ✅)
+- [x] 架构总纲 (Overview) —— 17 个子系统全景导览
+- [x] 查询引擎 (QueryEngine) —— Claude Code 的"大脑"
+- [x] 工具系统 (Tool System) —— 42 个模块，一个接口
 - [x] 多智能体协调器 (Coordinator) —— 并行线程与分支机制
-
-**架构解析系列** (下一阶段 - 高影响力 ⭐⭐⭐)
-- [x] 插件系统 (Plugin System) —— 加载、市场与安装 (1.88万行)
+- [x] 插件系统 (Plugin System) —— 加载、验证与集成 (1.88万行)
 - [x] 钩子系统 (Hook System) —— PreToolUse / PostToolUse (8千行)
 - [x] Bash 执行引擎 —— 沙箱、管道管理 (1.15万行)
 - [x] 权限流水线 —— 纵深防御、操作系统沙箱 (9.5千行)
-
-**架构解析系列** (计划中 - 高价值 ⭐⭐)
 - [x] Swarm 智能体 —— 多智能体集群协作 (6.8千行)
 - [x] 会话持久化 —— 对话存储机制 (7.6千行)
 - [x] 上下文装配 —— 附件、记忆、技能 (8.3千行)
 - [x] 压缩系统 —— 自动压缩与微缩技术 (3.9千行)
-- [x] 启动优化 —— 预加载与延迟加载、快速路径级联 (7.6+千行)
-- [x] 桥接系统 (Bridge) —— 远程控制协议与双代传输 (1.17万行)
-- [x] CLAUDE.md 解析 —— 项目上下文文件 (1.3千行) ← 已在上下文装配中深度覆盖
+- [x] 启动与引导 —— 快速路径级联、动态导入 (7.6+千行)
+- [x] 桥接系统 —— 远程控制协议与双代传输 (1.17万行)
+- [x] UI 与状态管理 —— Ink 渲染引擎、Vim 模式 (140+ 组件)
+- [x] 服务与 API 层 —— 流重组、MCP 服务器 (1.2万行)
+- [x] 基础设施与配置 —— 设置合并、功能开关、遥测 (1.5万行)
 
 **本地化**
-- [x] 中文 README
+- [x] 全 17 篇中英双语对照
 
 ---
 
