@@ -38,6 +38,7 @@ This is **not** a source code dump. It's a structured engineering analysis — a
 | 8 | **Agent Swarms** | Multi-agent team coordination: mailbox IPC, backend detection, permission delegation (6.8K lines) | [Read →](architecture/08-agent-swarms.md) |
 | 9 | **Session Persistence** | Append-only JSONL storage, parent-UUID chains, 64KB lite resume (7.6K lines) | [Read →](architecture/09-session-persistence.md) |
 | 10 | **Context Assembly** | Three-layer context assembly: system prompts, CLAUDE.md memory, per-turn attachments (8.3K lines) | [Read →](architecture/10-context-assembly.md) |
+| 11 | **Compact System** | Three-tier compaction: microcompact, session memory compact, LLM summarization (3.9K lines) | [Read →](architecture/11-compact-system.md) |
 
 > ⭐ **Enjoy the meta? Star the repo — an AI analyzing itself deserves at least that.**
 
@@ -217,7 +218,7 @@ Permissions are checked at multiple levels: app-level config rules → tool-spec
 - [x] Swarm agents — multi-agent group coordination (6.8K lines)
 - [x] Session persistence — conversation storage (7.6K lines)
 - [x] Context assembly — attachments, memory, skills (8.3K lines)
-- [ ] Compact system — auto-compaction, snip, microcompact
+- [x] Compact system — auto-compaction, snip, microcompact (3.9K lines)
 - [ ] Startup optimization — preloading, lazy imports
 - [ ] Bridge system — IDE bidirectional communication (11.7K lines)
 - [x] CLAUDE.md parsing — project context files (1.3K lines) ← covered in Context Assembly
