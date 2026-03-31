@@ -29,8 +29,8 @@ This is **not** a source code dump. It's a structured engineering analysis — a
 | 3 | **Multi-Agent Coordinator** | How Claude Code spawns parallel workers, routes messages, and synthesizes results | [Read →](architecture/03-coordinator.md) |
 | 4 | **Plugin System** | How plugins are loaded, validated, and integrated (18.8K lines) | [Read →](architecture/04-plugin-system.md) |
 | 5 | **Hook System** | PreToolUse / PostToolUse / SessionStart extensibility (8K lines) | [Read →](architecture/05-hook-system.md) |
-| 6 | **Bash Execution Engine** | Secure command execution, sandbox, pipe management (11.5K lines) | Coming soon |
-| 7 | **Permission Pipeline** | Defense-in-depth: config rules → tool checks → OS sandbox (9.5K lines) | Coming soon |
+| 6 | **Bash Execution Engine** | Secure command execution, sandbox, pipe management (11.5K lines) | [Read →](architecture/06-bash-engine.md) |
+| 7 | **Permission Pipeline** | Defense-in-depth: config rules → tool checks → OS sandbox (9.5K lines) | [Read →](architecture/07-permission-pipeline.md) |
 
 > ⭐ **Enjoy the meta? Star the repo — an AI analyzing itself deserves at least that.**
 
@@ -192,8 +192,8 @@ Permissions are checked at multiple levels: app-level config rules → tool-spec
 **Architecture Series** (Next up — high impact ⭐⭐⭐)
 - [x] Plugin system — loading, marketplace, installation (18.8K lines)
 - [x] Hook system — PreToolUse / PostToolUse / SessionStart (8K lines)
-- [ ] Bash execution engine — sandbox, pipe management (11.5K lines)
-- [ ] Permission pipeline — defense-in-depth, sandbox (9.5K lines)
+- [x] Bash execution engine — sandbox, pipe management (11.5K lines)
+- [x] Permission pipeline — defense-in-depth, sandbox (9.5K lines)
 
 **Architecture Series** (Planned — high value ⭐⭐)
 - [ ] Swarm agents — multi-agent group coordination (6.8K lines)

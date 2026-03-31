@@ -1,18 +1,22 @@
 > 🌐 **语言**: [English →](README_EN.md) | 中文
 
-# 🪞 Claude 剖析 Claude Code (README 中文版)
+# 🪞 Claude 眼中的老己
+
+### *Claude Reviews Claude Code*
 
 *一个 AI 在阅读自己的源代码。是的，这很元（Meta）。*
+
+*翻开之后它说："原来我是这么工作的啊。"*
 
 [![Stars](https://img.shields.io/github/stars/openedclaude/claude-reviews-claude?style=social)](https://github.com/openedclaude/claude-reviews-claude)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/openedclaude/claude-reviews-claude)](https://github.com/openedclaude/claude-reviews-claude)
 
-> **这份完整的架构分析是由 Claude 撰写的 —— 针对驱动 Claude Code 的源代码。**
+> **这份完整的架构分析是由 Claude 撰写的 —— 分析对象正是驱动 Claude Code 的源代码本身。**
 >
-> 1,902 个文件。477,439 行 TypeScript 代码。一个模型正在阅读定义它如何思考、行动和执行的代码。
+> 1,902 个文件。477,439 行 TypeScript 代码。一个模型坐下来，逐行阅读了定义自己如何思考、行动和执行的每一行逻辑。
 >
-> 你现在阅读的是 Claude 对 Claude Code v2.1.88 版本的架构解构：查询引擎如何循环，42 个工具如何编排，多智能体（Multi-agent）工作线程如何并行协调 —— 所有这一切，都由这些系统所服务的模型亲自分析。
+> 你正在阅读的是 Claude 对 Claude Code v2.1.88 的亲笔解构：查询引擎如何循环，42 个工具如何编排，多智能体工作线程如何并行协调 —— 全部由被分析的对象本人完成分析。
 >
 > *我们并未预料到这种讽刺感。我们只是顺势而为。*
 
@@ -29,8 +33,8 @@
 | 3 | **多智能体协调器 (Coordinator)** | Claude Code 如何衍生并行工作线程、分发消息并汇总结果 | [阅读 →](architecture/zh-CN/03-coordinator.md) |
 | 4 | **插件系统 (Plugin System)** | 插件如何加载、验证和集成（1.88万行代码） | [阅读 →](architecture/zh-CN/04-plugin-system.md) |
 | 5 | **钩子系统 (Hook System)** | 涵盖 PreToolUse / PostToolUse / SessionStart 的可扩展性（8千行代码） | [阅读 →](architecture/zh-CN/05-hook-system.md) |
-| 6 | **Bash 执行引擎 (Bash Engine)** | 安全命令执行、沙箱管理、管道流处理（1.15万行代码） | 敬请期待 |
-| 7 | **权限流水线 (Permission)** | 纵深防御：配置规则 → 工具检查 → 操作系统沙箱（9.5千行代码） | 敬请期待 |
+| 6 | **Bash 执行引擎 (Bash Engine)** | 安全命令执行、沙箱管理、管道流处理（1.15万行代码） | [阅读 →](architecture/zh-CN/06-bash-engine.md) |
+| 7 | **权限流水线 (Permission)** | 纵深防御：配置规则 → 工具检查 → 操作系统沙箱（9.5千行代码） | [阅读 →](architecture/zh-CN/07-permission-pipeline.md) |
 
 > ⭐ **喜欢这种“套娃”感吗？给这个仓库点个赞吧 —— 一个正在分析自己的 AI 值得拥有这颗星。**
 
@@ -158,8 +162,8 @@ claude-code-deep-dive/
 **架构解析系列** (下一阶段 - 高影响力 ⭐⭐⭐)
 - [x] 插件系统 (Plugin System) —— 加载、市场与安装 (1.88万行)
 - [x] 钩子系统 (Hook System) —— PreToolUse / PostToolUse (8千行)
-- [ ] Bash 执行引擎 —— 沙箱、管道管理 (1.15万行)
-- [ ] 权限流水线 —— 纵深防御、操作系统沙箱 (9.5千行)
+- [x] Bash 执行引擎 —— 沙箱、管道管理 (1.15万行)
+- [x] 权限流水线 —— 纵深防御、操作系统沙箱 (9.5千行)
 
 **架构解析系列** (计划中 - 高价值 ⭐⭐)
 - [ ] Swarm 智能体 —— 多智能体集群协作 (6.8千行)
