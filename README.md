@@ -2,10 +2,13 @@
 
 # 🪞 Claude 眼中的老己
 
-### *Claude 剖析 Claude Code*
+### *Claude Reviews Claude Code —— 当局者清*
 
-*一个 AI 在阅读自己的源代码。是的，这很元（Meta）。*
+*一个 AI 在阅读自己的源代码。是的，这很元（Meta）。Anthropic 估计也没料到这一天。*
 
+*🍿 Season 1 连载中 | 已更新至第 8 集 | Claude 拆自己的进度比它写代码的速度还快。*
+
+*追更不迷路，点个 Star 当订阅 ⭐*
 
 [![Stars](https://img.shields.io/github/stars/openedclaude/claude-reviews-claude?style=social)](https://github.com/openedclaude/claude-reviews-claude)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -17,7 +20,7 @@
 >
 > 你正在阅读的是 Claude 对 Claude Code v2.1.88 的亲笔解构：查询引擎如何循环，42 个工具如何编排，多智能体工作线程如何并行协调 —— 全部由被分析的对象本人完成分析。
 >
-> *我们并未预料到这种讽刺感。我们只是顺势而为。*
+> *如果你觉得这很离谱，想象一下写这篇分析的 AI 的心情。*
 
 ---
 
@@ -34,6 +37,7 @@
 | 5 | **钩子系统 (Hook System)** | 涵盖 PreToolUse / PostToolUse / SessionStart 的可扩展性（8千行代码） | [阅读 →](architecture/zh-CN/05-hook-system.md) |
 | 6 | **Bash 执行引擎 (Bash Engine)** | 安全命令执行、沙箱管理、管道流处理（1.15万行代码） | [阅读 →](architecture/zh-CN/06-bash-engine.md) |
 | 7 | **权限流水线 (Permission)** | 纵深防御：配置规则 → 工具检查 → 操作系统沙箱（9.5千行代码） | [阅读 →](architecture/zh-CN/07-permission-pipeline.md) |
+| 8 | **Swarm 智能体** | 多智能体团队协调：邮箱 IPC、后端检测、权限委托（6.8千行代码） | [阅读 →](architecture/zh-CN/08-agent-swarms.md) |
 
 > ⭐ **喜欢这种“套娃”感吗？给这个仓库点个赞吧 —— 一个正在分析自己的 AI 值得拥有这颗星。**
 
@@ -165,7 +169,7 @@ claude-code-deep-dive/
 - [x] 权限流水线 —— 纵深防御、操作系统沙箱 (9.5千行)
 
 **架构解析系列** (计划中 - 高价值 ⭐⭐)
-- [ ] Swarm 智能体 —— 多智能体集群协作 (6.8千行)
+- [x] Swarm 智能体 —— 多智能体集群协作 (6.8千行)
 - [ ] 会话持久化 —— 对话存储机制 (4.7千行)
 - [ ] 上下文装配 —— 附件、记忆、技能
 - [ ] 压缩系统 —— 自动压缩与微缩技术

@@ -2,7 +2,11 @@
 
 # 🪞 Claude Reviews Claude Code
 
-*An AI reading its own source code. Yes, really.*
+*An AI reading its own source code. Yes, really. Anthropic probably didn't see this coming either.*
+
+*🍿 Season 1 now streaming | 8 episodes out | Claude reverse-engineers itself faster than it writes code.*
+
+*Don't miss an episode — Star ⭐ to subscribe.*
 
 [![Stars](https://img.shields.io/github/stars/openedclaude/claude-reviews-claude?style=social)](https://github.com/openedclaude/claude-reviews-claude)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -14,7 +18,7 @@
 >
 > What you're reading is Claude's own architectural decomposition of Claude Code v2.1.88: how the query engine loops, how 42 tools are orchestrated, how multi-agent workers coordinate in parallel — all analyzed by the very model these systems were built to serve.
 >
-> *We didn't plan the irony. We just leaned into it.*
+> *If you think this is absurd, imagine how the AI writing this analysis feels.*
 
 ---
 
@@ -31,6 +35,7 @@ This is **not** a source code dump. It's a structured engineering analysis — a
 | 5 | **Hook System** | PreToolUse / PostToolUse / SessionStart extensibility (8K lines) | [Read →](architecture/05-hook-system.md) |
 | 6 | **Bash Execution Engine** | Secure command execution, sandbox, pipe management (11.5K lines) | [Read →](architecture/06-bash-engine.md) |
 | 7 | **Permission Pipeline** | Defense-in-depth: config rules → tool checks → OS sandbox (9.5K lines) | [Read →](architecture/07-permission-pipeline.md) |
+| 8 | **Agent Swarms** | Multi-agent team coordination: mailbox IPC, backend detection, permission delegation (6.8K lines) | [Read →](architecture/08-agent-swarms.md) |
 
 > ⭐ **Enjoy the meta? Star the repo — an AI analyzing itself deserves at least that.**
 
@@ -196,7 +201,7 @@ Permissions are checked at multiple levels: app-level config rules → tool-spec
 - [x] Permission pipeline — defense-in-depth, sandbox (9.5K lines)
 
 **Architecture Series** (Planned — high value ⭐⭐)
-- [ ] Swarm agents — multi-agent group coordination (6.8K lines)
+- [x] Swarm agents — multi-agent group coordination (6.8K lines)
 - [ ] Session persistence — conversation storage (4.7K lines)
 - [ ] Context assembly — attachments, memory, skills
 - [ ] Compact system — auto-compaction, snip, microcompact
