@@ -37,6 +37,7 @@ This is **not** a source code dump. It's a structured engineering analysis — a
 | 7 | **Permission Pipeline** | Defense-in-depth: config rules → tool checks → OS sandbox (9.5K lines) | [Read →](architecture/07-permission-pipeline.md) |
 | 8 | **Agent Swarms** | Multi-agent team coordination: mailbox IPC, backend detection, permission delegation (6.8K lines) | [Read →](architecture/08-agent-swarms.md) |
 | 9 | **Session Persistence** | Append-only JSONL storage, parent-UUID chains, 64KB lite resume (7.6K lines) | [Read →](architecture/09-session-persistence.md) |
+| 10 | **Context Assembly** | Three-layer context assembly: system prompts, CLAUDE.md memory, per-turn attachments (8.3K lines) | [Read →](architecture/10-context-assembly.md) |
 
 > ⭐ **Enjoy the meta? Star the repo — an AI analyzing itself deserves at least that.**
 

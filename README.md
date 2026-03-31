@@ -39,6 +39,7 @@
 | 7 | **权限流水线 (Permission)** | 纵深防御：配置规则 → 工具检查 → 操作系统沙箱（9.5千行代码） | [阅读 →](architecture/zh-CN/07-permission-pipeline.md) |
 | 8 | **Swarm 智能体** | 多智能体团队协调：邮箱 IPC、后端检测、权限委托（6.8千行代码） | [阅读 →](architecture/zh-CN/08-agent-swarms.md) |
 | 9 | **会话持久化 (Session Persistence)** | 仅追加 JSONL 存储、parent-UUID 链、64KB 轻量恢复（7.6千行代码） | [阅读 →](architecture/zh-CN/09-session-persistence.md) |
+| 10 | **上下文装配 (Context Assembly)** | 三层上下文组装：系统提示词、CLAUDE.md 记忆系统、每轮附件（8.3千行代码） | [阅读 →](architecture/zh-CN/10-context-assembly.md) |
 
 > ⭐ **喜欢这种“套娃”感吗？给这个仓库点个赞吧 —— 一个正在分析自己的 AI 值得拥有这颗星。**
 
