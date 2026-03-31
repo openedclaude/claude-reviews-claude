@@ -41,6 +41,7 @@
 | 9 | **会话持久化 (Session Persistence)** | 仅追加 JSONL 存储、parent-UUID 链、64KB 轻量恢复（7.6千行代码） | [阅读 →](architecture/zh-CN/09-session-persistence.md) |
 | 10 | **上下文装配 (Context Assembly)** | 三层上下文组装：系统提示词、CLAUDE.md 记忆系统、每轮附件（8.3千行代码） | [阅读 →](architecture/zh-CN/10-context-assembly.md) |
 | 11 | **压缩系统 (Compact System)** | 三层压缩架构：微压缩、会话记忆压缩、LLM 摘要压缩（3.9千行代码） | [阅读 →](architecture/zh-CN/11-compact-system.md) |
+| 12 | **启动与引导 (Startup & Bootstrap)** | 快速路径级联、动态导入、API 预连接、全局状态单例（7.6+千行代码） | [阅读 →](architecture/zh-CN/12-startup-bootstrap.md) |
 
 > ⭐ **喜欢这种“套娃”感吗？给这个仓库点个赞吧 —— 一个正在分析自己的 AI 值得拥有这颗星。**
 
@@ -187,7 +188,7 @@ claude-code-deep-dive/
 - [x] 会话持久化 —— 对话存储机制 (7.6千行)
 - [x] 上下文装配 —— 附件、记忆、技能 (8.3千行)
 - [x] 压缩系统 —— 自动压缩与微缩技术 (3.9千行)
-- [ ] 启动优化 —— 预加载与延迟加载
+- [x] 启动优化 —— 预加载与延迟加载、快速路径级联 (7.6+千行)
 - [ ] 桥接系统 (Bridge) —— 与 IDE 的双向通信 (1.17万行)
 - [x] CLAUDE.md 解析 —— 项目上下文文件 (1.3千行) ← 已在上下文装配中深度覆盖
 
