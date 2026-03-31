@@ -40,6 +40,7 @@ This is **not** a source code dump. It's a structured engineering analysis — a
 | 10 | **Context Assembly** | Three-layer context assembly: system prompts, CLAUDE.md memory, per-turn attachments (8.3K lines) | [Read →](architecture/10-context-assembly.md) |
 | 11 | **Compact System** | Three-tier compaction: microcompact, session memory compact, LLM summarization (3.9K lines) | [Read →](architecture/11-compact-system.md) |
 | 12 | **Startup & Bootstrap** | Fast-path cascade, dynamic imports, API preconnection, global state singleton (7.6K+ lines) | [Read →](architecture/12-startup-bootstrap.md) |
+| 13 | **Bridge System** | Remote control protocol, dual transport generations, poll-dispatch loop, crash recovery (11.7K lines) | [Read →](architecture/13-bridge-system.md) |
 
 > ⭐ **Enjoy the meta? Star the repo — an AI analyzing itself deserves at least that.**
 
@@ -221,7 +222,7 @@ Permissions are checked at multiple levels: app-level config rules → tool-spec
 - [x] Context assembly — attachments, memory, skills (8.3K lines)
 - [x] Compact system — auto-compaction, snip, microcompact (3.9K lines)
 - [x] Startup optimization — preloading, lazy imports, fast-path cascade (7.6K+ lines)
-- [ ] Bridge system — IDE bidirectional communication (11.7K lines)
+- [x] Bridge system — IDE bidirectional communication (11.7K lines)
 - [x] CLAUDE.md parsing — project context files (1.3K lines) ← covered in Context Assembly
 
 **Localization**
