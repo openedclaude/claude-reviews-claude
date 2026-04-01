@@ -1,7 +1,0 @@
-﻿stateDiagram-v2
-    [*] --> Running: spawn()
-    Running --> Completed: exit event
-    Running --> Killed: abort / timeout (no auto-bg)
-    Running --> Backgrounded: Ctrl+B / timeout (auto-bg) / 15s budget
-    Backgrounded --> Completed: exit event
-    Backgrounded --> Killed: size watchdog (>768MB incident!)

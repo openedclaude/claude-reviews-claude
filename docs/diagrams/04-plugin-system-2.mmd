@@ -1,7 +1,0 @@
-﻿graph LR
-    URI["Plugin URI<br/>(git URL, marketplace ID,<br/>local path)"] --> PARSE["parseMarketplaceInput()"]
-    PARSE --> RESOLVE["dependencyResolver.ts<br/>Resolve dependencies"]
-    RESOLVE --> CLONE["Git clone /<br/>Zip download"]
-    CLONE --> VALIDATE["validatePlugin()<br/>29K lines of checks"]
-    VALIDATE --> REGISTER["Register in<br/>installedPlugins.json"]
-    REGISTER --> LOAD["pluginLoader.ts<br/>Load components"]
