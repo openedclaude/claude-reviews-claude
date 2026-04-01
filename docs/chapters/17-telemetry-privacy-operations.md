@@ -1,6 +1,6 @@
 ﻿# 17 — Telemetry, Privacy & Operational Control: The Dark Side of Production
 
-> 🌐 **Language**: English | [中文版 →](zh-CN/17-telemetry-privacy-operations.md)
+> 🌐 **Language**: English | [中文版 →](/zh-CN/chapters/17-telemetry-privacy-operations)
 > 📖 **[Read Online →](https://openedclaude.github.io/claude-reviews-claude/chapters/17-telemetry-privacy-operations)** — Sidebar nav, dark mode & full-text search. Better than raw GitHub.
 
 

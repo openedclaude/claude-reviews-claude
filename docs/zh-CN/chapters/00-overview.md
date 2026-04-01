@@ -1,6 +1,6 @@
 ﻿# 00 — Claude Code 完整架构解析
 
-> 🌐 **语言**: 中文 | [English →](../00-overview.md)
+> 🌐 **语言**: 中文 | [English →](/chapters/00-overview)
 > 📖 **[在线阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/00-overview)** — 支持侧边栏导航、暗色模式与全文搜索，体验更佳。
 
 

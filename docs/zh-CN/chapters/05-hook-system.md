@@ -1,4 +1,4 @@
-﻿> 🌐 **语言**: [English →](../05-hook-system.md) | 中文
+﻿> 🌐 **语言**: [English →](/chapters/05-hook-system) | 中文
 > 📖 **[在线阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/05-hook-system)** — 支持侧边栏导航、暗色模式与全文搜索，体验更佳。
 
 

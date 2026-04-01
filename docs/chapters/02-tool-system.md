@@ -1,4 +1,4 @@
-﻿> 🌐 **Language**: English | [中文版 →](zh-CN/02-tool-system.md)
+﻿> 🌐 **Language**: English | [中文版 →](/zh-CN/chapters/02-tool-system)
 > 📖 **[Read Online →](https://openedclaude.github.io/claude-reviews-claude/chapters/02-tool-system)** — Sidebar nav, dark mode & full-text search. Better than raw GitHub.
 
 

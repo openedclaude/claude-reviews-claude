@@ -1,6 +1,6 @@
 ﻿# 00 — The Complete Architecture of Claude Code
 
-> 🌐 **Language**: English | [中文版 →](zh-CN/00-overview.md)
+> 🌐 **Language**: English | [中文版 →](/zh-CN/chapters/00-overview)
 > 📖 **[Read Online →](https://openedclaude.github.io/claude-reviews-claude/chapters/00-overview)** — Sidebar nav, dark mode & full-text search. Better than raw GitHub.
 
 

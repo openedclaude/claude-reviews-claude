@@ -1,4 +1,4 @@
-﻿> 🌐 **Language**: English | [中文版 →](zh-CN/04-plugin-system.md)
+﻿> 🌐 **Language**: English | [中文版 →](/zh-CN/chapters/04-plugin-system)
 > 📖 **[Read Online →](https://openedclaude.github.io/claude-reviews-claude/chapters/04-plugin-system)** — Sidebar nav, dark mode & full-text search. Better than raw GitHub.
 
 

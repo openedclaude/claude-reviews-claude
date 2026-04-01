@@ -1,4 +1,4 @@
-﻿> 🌐 **语言**: [English →](../03-coordinator.md) | 中文
+﻿> 🌐 **语言**: [English →](/chapters/03-coordinator) | 中文
 > 📖 **[在线阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/03-coordinator)** — 支持侧边栏导航、暗色模式与全文搜索，体验更佳。
 
 

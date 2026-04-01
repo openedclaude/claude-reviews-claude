@@ -1,4 +1,4 @@
-﻿> 🌐 **语言**: [English →](../01-query-engine.md) | 中文
+﻿> 🌐 **语言**: [English →](/chapters/01-query-engine) | 中文
 > 📖 **[在线阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/01-query-engine)** — 支持侧边栏导航、暗色模式与全文搜索，体验更佳。
 
 

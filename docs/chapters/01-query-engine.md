@@ -1,4 +1,4 @@
-﻿> 🌐 **Language**: English | [中文版 →](zh-CN/01-query-engine.md)
+﻿> 🌐 **Language**: English | [中文版 →](/zh-CN/chapters/01-query-engine)
 > 📖 **[Read Online →](https://openedclaude.github.io/claude-reviews-claude/chapters/01-query-engine)** — Sidebar nav, dark mode & full-text search. Better than raw GitHub.
 
 
