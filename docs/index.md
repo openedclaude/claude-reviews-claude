@@ -1,8 +1,8 @@
 ---
 layout: home
 hero:
-  name: "When AI Reads Its Own Source Code"
-  text: "Claude Reviews Claude"
+  name: "Claude Reviews Claude"
+  text: "When AI Reads Its Own Source Code"
   tagline: "17 architecture deep dives written by Claude, dissecting Claude Code v2.1.88 — 1,902 files, 477K lines of TypeScript."
   actions:
     - theme: brand
@@ -44,14 +44,18 @@ features:
 
 <style>
 :root {
-  --vp-home-hero-name-color: var(--vp-c-text-2);
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #D97757, #E8A87C, #F0C4A8);
+}
+
+.VPHero .name {
+  font-size: 56px !important;
+  line-height: 1.1 !important;
 }
 
 .VPHero .text {
-  background: linear-gradient(135deg, #D97757, #E8A87C, #F0C4A8) !important;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
+  font-size: 32px !important;
+  line-height: 1.3 !important;
 }
 
 .VPHero .main {
