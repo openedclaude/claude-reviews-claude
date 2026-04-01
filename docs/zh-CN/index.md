@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:
-  name: "Claude 眼中的自己"
+  name: "Claude 眼中的老己"
   text: "当 AI 阅读自己的源代码"
   tagline: "17 篇架构深度分析，由 Claude 亲笔解构 Claude Code v2.1.88 — 1,902 个文件，47.7 万行 TypeScript。"
   actions:
