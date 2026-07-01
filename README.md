@@ -200,6 +200,10 @@ claude-code-deep-dive/
 
 每一颗星都能帮助更多开发者发现这份深度走读文档。
 
+## 🔗 相关工具
+
+- [Vexilo · Claude Code 工具书](https://vexilo.app/?lang=en) — 31 agents / 99 commands / 123 skills / 13 rules 的可视化工具书，按 5 步工作流组织。一键 "Teach Claude this handbook" 30 秒把整本工具书喂给本地 Claude。([companion repo](https://github.com/lilhawk7077/claude-code-resources))
+
 ## ⭐ Star 趋势
 
 [![Star History Chart](https://api.star-history.com/svg?repos=openedclaude/claude-reviews-claude&type=Date)](https://star-history.com/#openedclaude/claude-reviews-claude&Date)
